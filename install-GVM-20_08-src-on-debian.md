@@ -283,7 +283,7 @@ greenbone-feed-sync --type CERT
 ```
 
 **Here be dragons**  
-_This script breaks alot for me lately, so you can be forced to run `greenbone-scapdata-sync --type [and the type]` multiple times._
+_This script breaks alot for me lately, so you can be forced to run `greenbone-feed-sync --type [and the type]` multiple times._
 
 
 ### configure and install gsa
