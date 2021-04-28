@@ -374,7 +374,6 @@ Documentation=man:gsad(8) https://www.greenbone.net
 After=network.target
 Wants=gvmd.service
 
-
 [Service]
 Type=forking
 PIDFile=/opt/gvm/var/run/gsad.pid
@@ -425,10 +424,9 @@ systemctl daemon-reload ;\
 systemctl enable gvmd ;\
 systemctl enable gsad ;\
 systemctl enable ospd-openvas ;\
+systemctl start ospd-openvas ;\
 systemctl start gvmd ;\
-systemctl start gsad ;\
-systemctl start ospd-openvas
-
+systemctl start gsad
 ```
 
 Check that the services are up and running
@@ -487,7 +485,6 @@ md manage:   INFO:2020-08-14 14h10.28 utc:29896: Updating CERT-Bund CVSS max suc
 md manage:   INFO:2020-08-14 14h10.28 utc:29896: sync_cert: Updating CERT info succeeded.
 md manage:   INFO:2020-08-14 14h13.01 utc:29895: Updating VTs in database ... 61397 new VTs, 0 changed VTs
 md manage:   INFO:2020-08-14 14h13.03 utc:29895: Updating VTs in database ... done (61397 VTs).
-
 ```
 The line you shall see when the db is updated is `Updating VTs in database ... done (61397 VTs)`
 
