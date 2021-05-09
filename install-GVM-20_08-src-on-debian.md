@@ -155,7 +155,7 @@ As openvas will be launched from an ospd-openvas process with sudo, the next con
 Edit the secure_path line to this.
 
 ```
-Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/opt/gvm/sbin"
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/gvm/sbin"
 ```
 
 Add this line to allow the created gvm user to launch openvas with root permissions.
@@ -163,8 +163,6 @@ Add this line to allow the created gvm user to launch openvas with root permissi
 ```
 ### Allow the user running ospd-openvas, to launch openvas with root permissions
 gvm ALL = NOPASSWD: /opt/gvm/sbin/openvas
-gvm ALL = NOPASSWD: /opt/gvm/sbin/gsad
-
 ```
 
 Then exit from the root shell, and go back to to the gvm user
