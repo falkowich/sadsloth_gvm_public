@@ -185,7 +185,7 @@ _If you get an error here, run `greenbone-nvt-sync` multiple times._
 ### upload plugins in redis with openvas
 
 ```
-sudo openvas -u
+openvas -u
 ```
 _Tip_  
 This is going to take some time depending on your hardware.  
@@ -193,7 +193,7 @@ You can watch openvas and redis-server processes using alot of cpu when this is 
 
 ```
 PID   USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ OMMAND                                                                                                                                    
-27796 root      20   0  105356  26436   3720 R  80.0   0.7   0:17.00 penvas                                                                                                                                    
+27796 gvm       20   0  105356  26436   3720 R  80.0   0.7   0:17.00 penvas                                                                                                                                    
 27605 redis     20   0  144856  86600   3200 S  21.7   2.1   0:06.23 redis-server   
 ```
 
